@@ -24,7 +24,7 @@ body{
     padding: 20px 3%;
     margin-top: 20px;
     margin-left: 20%;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.267);
@@ -36,11 +36,7 @@ body{
     font-size: 25px;
     font-weight: 600;
     text-decoration: none;
-    color: rgba(7, 5, 158, 0.911);
-}
-
-.logo::first-letter{
-    color: black;
+    color: rgb(12, 14, 6);
 }
 
 .logo::after{
@@ -57,7 +53,10 @@ body{
 }
 
 .navbar a:hover{
-
+    color: rgb(0, 0, 0);
+}
+.navbar i{
+    font-size: 25px;
 }
 
 .home{
@@ -98,6 +97,7 @@ body{
 .nameclr{
     background-image: linear-gradient(to right, #ffffff, #2c3e50);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -158,11 +158,53 @@ body{
     width: 100%;
 }
 
+.design1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 100px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.267);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 30%;
+}
+
+.design1:hover{
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.57);
+}
+
+.design1 h3{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(7, 5, 158, 0.911);
+    margin-bottom: 15px;
+    width: auto;
+}
+
+.design1 p{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 90%;
+}
+
 .projects, .langs{
     height: 95vh;
 }
 
-.project-content h1, .lang-content h1{
+.project-content h1{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -170,19 +212,18 @@ body{
 }
 
 .project-content p{
-    padding: 1%;
-    width: 50%;
-    margin: 0% auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
     color: rgb(0, 0, 0);
 }
 
 .project-link {
-    display: inline-block;
     background: linear-gradient(90deg, #0739a2 0%, #4f8edc 100%);
     color: #fff;
     font-weight: 600;
-    font-size: 17px;
-    padding: 10px 24px;
+    font-size: 12px;
     border-radius: 8px;
     text-decoration: none;
     box-shadow: 0 2px 8px rgba(7, 57, 162, 0.12);
@@ -191,25 +232,27 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
-    width: 50%;
-    margin: 0% auto;
+    width: 90%;
+    height: 27px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px;
 }
 
 .project-link i {
     margin-right: 8px;
-    font-size: 18px;
+    font-size: 10px;
     vertical-align: middle;
 }
 
 .project-link:hover {
     background: linear-gradient(90deg, #4f8edc 0%, #0739a2 100%);
-    color: #ffe4b5;
     transform: translateY(-2px) scale(1.04);
     box-shadow: 0 4px 16px rgba(7, 57, 162, 0.18);
 }
 
 .ending {
-    background: linear-gradient(90deg, hsl(209, 57%, 64%) 0%, hsl(209, 57%, 74%) 100%);
     color: #222;
     font-size: 14px;
     font-weight: 500;
